@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 
 import urllib2
 import cookielib
@@ -7,11 +5,13 @@ from getpass import getpass
 import sys
 
 
-username = "*****"  #Your way2sms username 
-passwd = "****" #Password required to login
-message = "*****" #Message to be sent
-number = "****" #Phone Number of the recipient
+#Login Details
+username = "" #Way2SMS Username
+passwd = "" #Way2SMS Password
 
+#Recipient's Number and Message
+message = body
+number = ""
 message = "+".join(message.split(' '))
 
 

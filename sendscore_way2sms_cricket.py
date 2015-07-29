@@ -6,11 +6,13 @@ import cookielib
 
 
 def sendscore(body):
+    #Login Details
+    username = "" #Way2SMS Username
+    passwd = "" #Way2SMS Password
     
-    username = "" #Way2Sms username
-    passwd = "" #Way2SMS password
+    #Recipient's Number and Message
     message = body
-    number = "" #Recipient's Number
+    number = ""
 
     message = "+".join(message.split(' '))
 

@@ -6,11 +6,13 @@ import cookielib
 
 
 def sendscore(body):
+    #Login Details
+    username = "" #Way2SMS Username
+    passwd = "" #Way2SMS Password
     
-    username = "8124887520"
-    passwd = "way2sms"
+    #Recipient's Number and Message
     message = body
-    number = "8879034740"
+    number = ""
 
     message = "+".join(message.split(' '))
 
@@ -67,6 +69,6 @@ while True:
     print match_news
     print team_name_home[0]," v/s ", team_name_away[0],"  ",team_score[0]
     #score = team_name[6]+" "+team_score[6]
-    #sendscore(score)
-    #print "%s sent at:%s "%(score,time.ctime())
-    #time.sleep(60)
+    sendscore(score)
+    print "%s sent at:%s "%(score,time.ctime())
+    time.sleep(60)
